@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgb(16, 11, 11);
+    height: 50px;
+}
+.logo_div, .menu {
+    width: 30%;
+    
+}
+.logo {
+    width: 35px;
+    height: auto;
+}
+.lab_div {
+    display: block;
+    text-align: center;
+    width: 40%;
+}
+.lab_title {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.menu {
+    visibility: hidden;
+}
+body {
+    width: 100%;
+    text-align: center;
+    background: rgb(22, 18, 18);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.text_div {
+    margin-top: 40px;
+}
+.text_1, .text_2, .footer_text, .minimax_title, .minimax_text {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.text_2 {
+    margin-top: 10px;
+}
+.text_select {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.select_button {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.player_selected {
+    background: rgb(181, 172, 172);
+}
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 1px;
+    margin-bottom: 15px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(213, 198, 198);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+#status {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.player_text {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+#restart {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(16, 11, 11);
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: auto;
+}
+.minimax_text {
+    text-align: left;
+}
+.minimax, .alpha_beta_img, .minimax_img {
+    width: 80%;
+    margin: 20px auto;
+}
